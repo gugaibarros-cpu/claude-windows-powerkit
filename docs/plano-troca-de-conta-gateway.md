@@ -39,9 +39,9 @@ Na pasta do projeto: `.\scripts\claude-free.ps1` (continua a sessão mais recent
 ### Fase 2: aviso e retomada quase automática (`cc.ps1` + hook, a testar)
 1. Registrar o hook em `~/.claude/settings.json` (**você aprova a mudança**; mudar configuração é decisão sua):
 ```json
-{ "hooks": { "StopFailure": [ { "matcher": "rate_limit|overloaded|billing_error", "hooks": [ { "type": "command", "command": "node C:/CAMINHO/setup-extras-claude/scripts/claude-limite-hook.cjs" } ] } ] } }
+{ "hooks": { "StopFailure": [ { "matcher": "rate_limit|overloaded|billing_error", "hooks": [ { "type": "command", "command": "node C:/CAMINHO/claude-windows-powerkit/scripts/claude-limite-hook.cjs" } ] } ] } }
 ```
-2. Usar `cc` no lugar de `claude` (função no perfil do PowerShell: `function cc { & C:\CAMINHO\setup-extras-claude\scripts\cc.ps1 @args }`).
+2. Usar `cc` no lugar de `claude` (função no perfil do PowerShell: `function cc { & C:\CAMINHO\claude-windows-powerkit\scripts\cc.ps1 @args }`).
 3. **A verificar com um limite real:** (a) se o esgotamento do plano Pro chega como `rate_limit` (a documentação não diz); o `payloads.log` em `%TEMP%\claude-limite` guarda o que o hook recebeu, para ajustar o `matcher`; (b) se o hook dispara no limite semanal.
 O hook foi testado só com um payload falso: grava o sinal e o log, não envia nada para fora e não altera o modelo nem a conta.
 

@@ -21,8 +21,8 @@ Se o Graphify, o Agent Reach, o Strix, o yt-dlp ou o OpenJarvis forem instalados
 
 ## Resumo em 4 passos
 
-1. Leve esta pasta para a outra máquina. Ela está no GitHub: https://github.com/gugaibarros-cpu/setup-extras-claude
-   - Com o `gh`: `gh repo clone gugaibarros-cpu/setup-extras-claude`.
+1. Leve esta pasta para a outra máquina. Ela está no GitHub: https://github.com/gugaibarros-cpu/claude-windows-powerkit
+   - Com o `gh`: `gh repo clone gugaibarros-cpu/claude-windows-powerkit`.
    - Sem GitHub: **Code → Download ZIP** e copie o ZIP.
 2. **Menu Iniciar → digite "PowerShell" → abra.** Vá até a pasta e rode:
    ```

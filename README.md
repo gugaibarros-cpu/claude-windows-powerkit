@@ -1,11 +1,11 @@
-# setup-extras-claude
+# claude-windows-powerkit
 
 Instalação dos extras do Claude Code no Windows: plugins, skills, ferramentas de linha de comando,
 roteadores de LLM grátis (OmniRoute, FreeLLMAPI), modelos locais (Ollama) e o Jarvis com voz em português.
 
 **Comece pelo [LEIA-ME.md](LEIA-ME.md).** Resumo:
 
-1. Baixe esta pasta (**Code → Download ZIP**, ou `gh repo clone gugaibarros-cpu/setup-extras-claude`).
+1. Baixe esta pasta (**Code → Download ZIP**, ou `gh repo clone gugaibarros-cpu/claude-windows-powerkit`).
    O repositório é público, sem chaves nem senhas.
 2. Num **PowerShell normal** (Menu Iniciar, não o terminal de dentro do app do Claude):
    ```
